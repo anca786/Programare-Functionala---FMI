@@ -11,6 +11,7 @@ Repository-ul include fișiere `.hs` cu exerciții practice și laboratoare care
 - Funcții de ordin superior
 - Pattern matching
 - Manipularea datelor imutabile
+- Clase de tipuri și instanțe
 
 ## Structura proiectului
 
@@ -19,5 +20,8 @@ Repository-ul include fișiere `.hs` cu exerciții practice și laboratoare care
 - `lab3.hs` – Liste și operații pe liste
 - `lab4.hs` – Funcții de ordin superior
 - `lab5.hs` – Pattern matching și expresii condiționale
-- `lab6.hs` – Proiect final sau exerciții avansate
+- `lab6.hs` – Tipuri de date
+- `lab7.hs` – Tipuri de date definite de utilizator
+- `lab8.hs` – Clase de tipuri (Type Classes) și structuri recursive
+- `lab9.hs` – Instanțe proprii, arbori și vectori polimorfici
 
