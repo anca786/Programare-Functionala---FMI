@@ -8,9 +8,12 @@ data Prop
   | Not Prop
   | Prop :|: Prop
   | Prop :&: Prop
-  | Prop :->: Prop
-  | Prop :<->: Prop
+  | Prop :->: Prop -- ex.8
+  | Prop :<->: Prop -- ex.8
   deriving Eq
+
+infixr 0 :<->:
+infixr 1 :->:
 infixr 2 :|:
 infixr 3 :&:
 
@@ -79,6 +82,9 @@ satisfiabila p = or [eval p l | l <- envs(variabile p)]
 --7. O propoziție este validă dacă se evaluează la True pentru orice interpretare a variabilelor. O formulare echivalentă este aceea că o propoziție este validă dacă negația ei este nesatisfiabilă. Definiți o funcție valida care verifică dacă o propoziție este validă.
 valida :: Prop -> Bool
 valida p = not (satisfiabila (Not p))
+
+valida2 :: Prop -> Bool
+valida2 p = and[eval p l | l <- envs(variabile p)]
 
 
 --8. Extindeți tipul de date Prop și funcțiile definite până acum pentru a include conectorii logici -> (implicație) și <-> (echivalență), folosind constructorii :->: și :<->:.
