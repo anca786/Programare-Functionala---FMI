@@ -24,4 +24,5 @@ Repository-ul include fișiere `.hs` cu exerciții practice și laboratoare care
 - `lab7.hs` – Tipuri de date definite de utilizator
 - `lab8.hs` – Clase de tipuri (Type Classes) și structuri recursive
 - `lab9.hs` – Instanțe proprii, arbori și vectori polimorfici
+- `lab10.hs` – Logică propozițională
 
